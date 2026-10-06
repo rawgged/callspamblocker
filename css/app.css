@@ -1,0 +1,68 @@
+body {
+    font-family: "Figtree", sans-serif;
+    font-size: 14px;
+    background: white;
+}
+div {
+    box-sizing: border-box;
+}
+/*
+h1 {
+    font-size: 3vw;
+}
+*/
+.app-footer {
+    div {
+        border-radius: 15px 15px 0 0;
+    }
+    
+}
+
+.app-hero-banner {
+    height: 400px;
+    overflow: hidden;
+    background: radial-gradient(#2563eb, #4925eb, #d425eb);
+    .app-banner-img {
+        position: relative;
+        height: 400px;
+        img {
+            width: 100%;
+        }
+        @media(min-width: 640px){
+            img {
+                position: absolute;
+                right: 0px;
+                width: 150%;
+                height: auto;
+            }  
+        }
+
+    }
+    
+    animation: bannereffect 5.0s infinite ease-in;
+    -webkit-animation: bannereffect 5.0s infinite ease-in;
+    
+}
+@keyframes bannereffect{
+    0% {background: radial-gradient(#2563eb, #4925eb, #d425eb);}
+    50% {background: radial-gradient(#d425eb,#2563eb, #4925eb,);}
+    100% {background: radial-gradient(#4925eb, #d425eb,#2563eb);}
+}
+
+@-webkit-keyframes bannereffect{
+    0% {background: radial-gradient(#2563eb, #4925eb, #d425eb);}
+    50% {background: radial-gradient(#d425eb,#2563eb, #4925eb,);}
+    100% {background: radial-gradient(#4925eb, #d425eb,#2563eb);}
+}
+
+
+
+
+.app-highlight {
+    color: #4925eb;
+}
+
+.app-button {
+    background: linear-gradient(to left, #2563eb, #4925eb);
+    color: white;
+}
